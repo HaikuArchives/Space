@@ -52,7 +52,7 @@ RSRCS=Space.rsrc
 #		naming scheme you need to specify the path to the library
 #		and it's name
 #		library: my_lib.a entry: my_lib.a or path/my_lib.a
-LIBS= be _APP_
+LIBS=
 
 #	specify additional paths to directories following the standard
 #	libXXX.so or libXXX.a naming scheme.  You can specify full paths
@@ -60,7 +60,7 @@ LIBS= be _APP_
 #	be recursive, so include all of the paths where libraries can
 #	be found.  Directories where source files are found are
 #	automatically included.
-LIBPATHS= 
+LIBPATHS= "-lbe -lsdc++ -lscreensaver"
 
 #	additional paths to look for system headers
 #	thes use the form: #include <header>
@@ -107,9 +107,11 @@ LINKER_FLAGS =
 
 
 ## include the makefile-engine
-include /boot/develop/etc/makefile-engine
-
+#include /boot/develop/etc/makefile-engine
+DEVEL_DIRECTORY := \
+	$(shell findpaths -r "makefile_engine" B_FIND_PATH_DEVELOP_DIRECTORY)
+include $(DEVEL_DIRECTORY)/etc/makefile-engine
 ## Rule for creating the _APP_ symlink at need
-$(TARGET) : _APP_
-_APP_ :
-	ln -s /boot/beos/preferences/ScreenSaver $@
+#$(TARGET) : _APP_
+#_APP_ :
+#	ln -s /boot/beos/preferences/ScreenSaver $@
