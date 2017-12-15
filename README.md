@@ -1,7 +1,8 @@
-![Space screenshot](Space.png "Pe")
 # Space
 
 Screen Saver like you are flying through space.
+
+![Space screenshot](Space.png "Pe")
 
 I used to watch the Windows 95 screen saver, Flying Through Space, waiting for a star to come right at me but it never happened. :( Yet another disappointment with Windows.
 
