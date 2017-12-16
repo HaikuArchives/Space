@@ -52,7 +52,7 @@ RSRCS=Space.rsrc
 #		naming scheme you need to specify the path to the library
 #		and it's name
 #		library: my_lib.a entry: my_lib.a or path/my_lib.a
-LIBS= "be sdc++ screensaver"
+LIBS= be stdc++
 
 #	specify additional paths to directories following the standard
 #	libXXX.so or libXXX.a naming scheme.  You can specify full paths
@@ -111,7 +111,3 @@ LINKER_FLAGS =
 DEVEL_DIRECTORY := \
 	$(shell findpaths -r "makefile_engine" B_FIND_PATH_DEVELOP_DIRECTORY)
 include $(DEVEL_DIRECTORY)/etc/makefile-engine
-## Rule for creating the _APP_ symlink at need
-#$(TARGET) : _APP_
-#_APP_ :
-#	ln -s /boot/beos/preferences/ScreenSaver $@
