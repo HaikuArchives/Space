@@ -2,6 +2,8 @@
 
 Screen Saver like you are flying through space.
 
+![Space screenshot](Space.png "Space")
+
 I used to watch the Windows 95 screen saver, Flying Through Space, waiting for a star to come right at me but it never happened. :( Yet another disappointment with Windows.
 
 I noticed there was nothing like that for Be, so I wrote this. I wrote REAL math to drive this that calculates the stars' positions in real perspective, not faked kludge junk. The display is really smooth, and stars do come directly at you if you wait long enough. :) Enjoy.
