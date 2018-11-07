@@ -56,14 +56,14 @@ resource mini_icon array {
 resource app_signature "application/x-vnd.SpaceScreenSaver";
 
 resource app_version {
-	major  = 1,
-	middle = 1,
+	major  = 1.2,
+	middle = 1.2,
 	minor  = 0,
 
 	variety = B_APPV_DEVELOPMENT,
 	internal = 0,
 
-	short_info = "Space Screen Saver",
+	short_info = "Space screensaver",
 	long_info = "Space, by David Enderson (neelix@festing.org)"
 };
 
